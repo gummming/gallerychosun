@@ -1,0 +1,99 @@
+html{
+    body{
+        div{
+            max-width: 1380px;
+            padding: 0px 50px;
+            margin:auto;
+            .current-exhibition{
+                padding: 0 10%;
+                .current-exhibition-image{
+                    width: 900px;
+                    height: 780px;
+                    display: block;
+                    margin: 0 auto;
+                    background-color: #606060;
+                }
+                .current-exhibition-list{
+                    display: flex;
+                    margin: auto;
+                    .current-exhibition-first-floor, .current-exhibition-second-floor{
+                        width: 50%;
+                        margin: 50px;
+                    }
+                    .current-exhibition-second-floor{
+                        border-left: solid 1px #cecece;
+                        padding-left: 30px;
+                    }
+                    .current-exhibition-title{
+                       padding-bottom: 14px;
+                    }
+                    .current-exhibition-artist{
+                        line-height: 2;
+                    }
+                    .current-exhibition-date{
+                       
+                    }    
+                }
+            }
+            .past-exhibition-preview{
+                padding: 10%;
+                .search-bar{
+                    border: 0.75px solid #cecece; 
+                    width: 220px;
+                    height: 20px;
+                    padding: 0;
+                    margin: 0;
+                }
+                .past-exhibition-title-list{                                
+                    width: 100%;
+                    margin: 80px 0px 60px 0px;
+                    padding-bottom: 20px;
+                    border-bottom: 0.75px solid #cecece;
+                    li{
+                        display: inline-block;
+                    }
+                    .past-exhibition-title{
+                        color: #777777;
+                        font-size: 20px;
+                    }
+                    .gallery{ 
+                        float: right;
+                        margin-right: 20px;
+                    }
+                    .viewing{
+                        color: #777777;
+                        float: right;
+                    }
+                }
+                
+                .past-exhibition-list{
+                    display: flex;
+                    justify-content: space-between;
+                    flex-wrap: wrap;	
+                    .past-exhibition-item{
+                        width:240px;
+                        height: 290px;
+                        margin-bottom: 136px;
+                        .past-exhibition-thumbnail{
+                            width: 240px;
+                            height: 195px;
+                            margin-bottom: 16px;
+                        }
+                        .exhibition-name{
+                            margin-bottom: 32px;
+                        }
+                        .artist-name{
+                            color: #777777;
+                            font-size: 14px;
+                            margin-bottom: 6px;
+                        }
+                        .period{
+                             color: #777777;
+                             font-size: 14px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
