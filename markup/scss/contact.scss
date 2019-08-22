@@ -1,0 +1,53 @@
+html{
+    body{
+        div{
+            h2{
+                padding-top: 60px;
+                padding-bottom: 40px;
+            }
+            max-width: 1380px;
+            padding: 0px 50px;
+            margin:auto;
+            .gallery-article{
+                width: 40%;
+                padding: 0 5%;
+                float: left;
+                .main-image{
+                    width: 100%;
+                    height: 400px;
+                    background-color: #606060;
+                }
+                article{
+                    letter-spacing: 0.5;
+                    line-height: 1.5;
+                    text-align: justify;
+                    p{
+                        padding-bottom: 30px;
+                    }
+                }
+            }
+            .gallery-information{
+                width: 40%;
+                padding: 0 5%;
+                float: right;
+                .address{
+                    width: 100%;
+                    height: 400px;
+                }
+                .gallery-information-list{
+                    .gallery-information-item{
+                        float: left;
+                        width: 50%;
+                        height: 150px;
+                        letter-spacing: 0.5;
+                        .sns-link-image{
+                            display: inline;
+                            width: 45px;
+                            height: 45px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
