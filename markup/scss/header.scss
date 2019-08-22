@@ -1,0 +1,27 @@
+
+html{
+    body{
+        div{
+            max-width: 1280px;
+            height: 100px;
+            margin: auto;
+            background-color: white;
+            .logo-image{
+                width: 320px;
+                height: 100px;
+            }
+            .menu-list{
+                list-style: none;
+                display: flex;
+                float: right;
+                justify-content: flex-end;
+                .menu-item{
+                    font-color: #777777;
+                    font-size: 19px;
+                    padding: 40px;
+                    letter-spacing: -0.5;
+                }
+            }
+        }
+    }
+}
