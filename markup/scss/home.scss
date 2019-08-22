@@ -1,0 +1,70 @@
+html{
+    body{
+        div{
+            max-width: 1380px;
+            padding: 0 50px;
+            margin: auto;
+            margin-top: 100px;
+            .current-exhibition{
+                padding: 0 10%;
+                .current-exhibition-image{
+                    width: 100%;
+                    height: 780px;
+                    display: block;
+                    margin: 0 auto;
+                    background-color: #606060;
+                }
+                .current-exhibition-list{
+                    display: flex;
+                    margin: auto;
+                    .current-exhibition-first-floor, .current-exhibition-second-floor{
+                        width: 50%;
+                        margin: 50px;
+                    }
+                    .current-exhibition-second-floor{
+                        border-left: solid 1px #cecece;
+                        padding-left: 30px;
+                    }
+                    .current-exhibition-title{
+                       padding-bottom: 14px;
+                    }
+                    .current-exhibition-artist{
+                        line-height: 2;
+                    }
+                    .current-exhibition-date{
+                       
+                    }    
+                }
+            }
+            .artist-list-preview{
+                padding: 0 10% 10% 10%;
+                .artist-list-title{
+                    width: 100%;
+                    border-bottom: solid 0.75px #cecece;
+                    margin: 80px 0px 60px 0px;
+                    padding-bottom: 20px;
+                }
+                .artist-list{
+                    display: flex;
+                    justify-content: space-between;
+                    flex-wrap: wrap;
+                    li{
+                        width: 33.3%;
+                        margin-bottom: 30px;
+                        flex: 0 1 auto;
+                        .artist-list-thumbnail{
+                            width: 90%;
+                            height: 200px;
+                            background-color: #606060;
+                        }
+                        .artist-name{
+                            font-color: #777777;
+                            letter-spacing: 0.5;
+                            padding-top: 8px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
