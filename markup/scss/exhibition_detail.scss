@@ -1,0 +1,119 @@
+html{
+    body{
+        div{
+            max-width: 1380px;
+            padding: 0px 50px;
+            margin:auto;
+            .exhibition-detail-img-section{
+                padding: 0 10%;
+                position: relative;
+                .exhibition-detail-title-list{
+                    padding: 30px 0px;
+                    margin-bottom: 60px;
+                    border-bottom: 1.5px solid #cecece;
+                    .exhibition-detail-title-item{
+                        float: left;
+                        h2{
+                            font-weight: 500;
+                            letter-spacing: 1.5px;
+                            span{
+                                letter-spacing: 0;
+                            }
+                        }
+                    }
+                    .exhibition-detail-title-item:last-child{
+                    margin-left: 70%;
+                    color: #777777;
+                    font-weight: 500;
+                    }
+                }
+                .exhibition-detail-bigimg{
+                    display: block;
+                    width: 50%;
+                    margin: auto;
+                }
+                .exhibition-detail-smallimg-list{
+                    position: absolute;
+                    right: 10%;
+                    top: 142px;
+                    .exhibition-detail-smallimg-item{
+                        margin-bottom: 10px;
+                        img{
+                            height: 48px;
+                        }
+                    }
+                }
+            }
+            .exhibition-detail-text-kor{
+                padding: 10% 10% 0 10%;
+                .exhibition-detail-text-title{
+                    font-weight: 500;
+                    letter-spacing: 0.5px;
+                    border-top: 1.5px solid #cecece;
+                    padding-top: 80px;
+                    margin: 0px 0px 60px 0px;
+                    color: #777777;
+                }
+                .exhibition-detail-text-subtitle{
+                    margin-bottom: 30px;
+                    span{
+                        font-weight: 400;
+                    }
+                }
+                div{
+                    display: flex;
+                    flex-wrap: wrap;
+                    padding: 0;
+                    p{  
+                        width: 47%;
+                        text-align: justify;
+                        margin-bottom: 70px;
+                        line-height: 180%;
+                        span{
+                            font-weight: 400;
+                        }
+                    }
+                    p:last-child{
+                        margin-left: 6%
+                    }        
+                }    
+            }
+            .exhibition-detail-text-eng{
+                padding: 10%;   
+                .exhibition-detail-text-title{
+                    font-weight: 500;
+                    letter-spacing: 0.5px;
+                    border-top: 1.5px solid #cecece;
+                    padding-top: 80px;
+                    margin: 0px 0px 60px 0px;
+                    color: #777777;
+                }
+                .exhibition-detail-text-subtitle{
+                    margin-bottom: 30px;
+                    color: #777777;
+                    span{
+                        font-weight: 500;
+                    }
+                }
+                div{
+                    display: flex;
+                    flex-wrap: wrap;
+                    padding: 0;
+                    p{  
+                        width: 47%;
+                        text-align: justify;
+                        margin-bottom: 70px;
+                        line-height: 180%;
+                        color: #777777;
+                        span{
+                            font-weight: 500;
+                        }
+                    }   
+                    p:last-child{
+                        margin-left: 6%
+                    }          
+                }                
+            }
+        }
+    }
+}
