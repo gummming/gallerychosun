@@ -23,8 +23,19 @@ html{
                     }
                     .current-exhibition-second-floor{
                         border-left: solid 1px #cecece;
-                        padding-left: 30px;
-                        transition: color;
+                        padding-left: 30px;   
+                        h1, p{
+                            transition: all 1s ease-in-out 0;
+                            color: lightgray;
+                        }
+                    }
+                    .current-exhibition-second-floor{
+                        h1:hover{
+                            color: #000000;
+                        }
+                        p:hover{
+                            color: #555555;
+                        }
                     }
                     .current-exhibition-title{
                         color: #000000;
