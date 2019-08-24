@@ -43,11 +43,13 @@ html{
                         width: 50%;
                         height: 150px;
                         letter-spacing: 0.5;
-                        .sns-link-image{
-                            display: inline;
-                            width: 45px;
-                            height: 45px;
-                        }
+                        .sns{
+                            .sns-image{
+                                display: inline;
+                                width: 45px;
+                                height: 45px;
+                            }
+                        }    
                     }
                 }
             }
