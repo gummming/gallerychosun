@@ -1,13 +1,13 @@
 html{
     body{
         div{
+            max-width: 1380px;
+            padding: 0px 50px;
+            margin:auto;
             h2{
                 padding-top: 60px;
                 padding-bottom: 40px;
             }
-            max-width: 1380px;
-            padding: 0px 50px;
-            margin:auto;
             .gallery-article{
                 width: 40%;
                 padding: 0 5%;
@@ -41,7 +41,8 @@ html{
                     .gallery-information-item{
                         float: left;
                         width: 50%;
-                        height: 150px;
+                        max-height: 150px;
+                        padding-bottom: 100px;
                         letter-spacing: 0.5;
                         .sns{
                             .sns-image{
