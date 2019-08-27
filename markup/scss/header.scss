@@ -2,6 +2,7 @@
 html{
     body{
         div{
+            position: relative;
             max-width: 1280px;
             height: 100px;
             margin: auto;
@@ -11,12 +12,13 @@ html{
                 height: 100px;
             }
             .menu-list{
-                list-style: none;
+                position: absolute;
+                top: 0;
+                right: 0;
                 display: flex;
-                float: right;
                 justify-content: flex-end;
                 .menu-item{
-                    font-color: #777777;
+                    color: #777777;
                     font-size: 19px;
                     padding: 40px;
                     letter-spacing: -0.5;
