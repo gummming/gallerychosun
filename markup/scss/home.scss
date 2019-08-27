@@ -16,7 +16,6 @@ html{
                 }
                 .current-exhibition-list{
                     display: flex;
-                    margin: auto;
                     .current-exhibition-first-floor, .current-exhibition-second-floor{
                         width: 50%;
                         margin: 50px;
@@ -43,14 +42,15 @@ html{
                     }
                     .current-exhibition-artist{
                         color: #555555;
-                        line-height: 2;
+                        line-height: 20px;
                         .kor{
                             padding-right: 5px;
                         }
                     }
                     .current-exhibition-date{
                         color: #555555;
-                       font-size: 12px;
+                        font-size: 12px;
+                        line-height: 12px;
                     }    
                 }
             }
