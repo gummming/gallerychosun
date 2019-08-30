@@ -7,7 +7,7 @@ html{
             .current-exhibition{
                 padding: 0 10%;
                 .current-exhibition-image{
-                    width: 900px;
+                    width: 100%;
                     height: 780px;
                     display: block;
                     margin: 0 auto;
@@ -15,23 +15,41 @@ html{
                 }
                 .current-exhibition-list{
                     display: flex;
-                    margin: auto;
                     .current-exhibition-first-floor, .current-exhibition-second-floor{
                         width: 50%;
                         margin: 50px;
                     }
                     .current-exhibition-second-floor{
                         border-left: solid 1px #cecece;
-                        padding-left: 30px;
+                        padding-left: 30px;   
+                        h1, p{
+                            transition: all 1s ease-in-out 0;
+                            color: lightgray;
+                        }
+                    }
+                    .current-exhibition-second-floor:hover{
+                        h1{
+                            color: #000000;
+                        }
+                        p{
+                            color: #555555;
+                        }
                     }
                     .current-exhibition-title{
-                       padding-bottom: 14px;
+                        color: #000000;
+                        padding-bottom: 10px;
                     }
                     .current-exhibition-artist{
-                        line-height: 2;
+                        color: #555555;
+                        line-height: 20px;
+                        .kor{
+                            padding-right: 5px;
+                        }
                     }
                     .current-exhibition-date{
-                       
+                        color: #555555;
+                        font-size: 12px;
+                        line-height: 12px;
                     }    
                 }
             }
@@ -51,6 +69,7 @@ html{
                     border-bottom: 0.75px solid #cecece;
                     li{
                         display: inline-block;
+                        font-weight: 500;
                     }
                     .past-exhibition-title{
                         color: #777777;
@@ -64,6 +83,9 @@ html{
                         color: #777777;
                         float: right;
                     }
+                    .viewing:hover{
+                        color: #000000;
+                    }
                 }
                 
                 .past-exhibition-list{
@@ -74,12 +96,14 @@ html{
                         width:240px;
                         height: 290px;
                         margin-bottom: 136px;
+                        font-weight: 500;
                         .past-exhibition-thumbnail{
                             width: 100%;
                             margin-bottom: 16px;
                         }
                         .exhibition-name{
                             margin-bottom: 32px;
+                            line-height: 20px;
                         }
                         .artist-name{
                             color: #777777;
