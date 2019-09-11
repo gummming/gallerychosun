@@ -1,15 +1,19 @@
-
 html{
+    width: 100%;
+    height: 100%;
     body{
+        box-sizing: border-box;
+        max-width: 1380px;
+        height: 100px;
+        padding: 0px 50px;
+        margin:auto;
         div{
             position: relative;
-            max-width: 1280px;
-            height: 100px;
-            margin: auto;
             background-color: white;
             .logo-image{
                 width: 320px;
                 height: 100px;
+                padding: 0 0 0 40px;
             }
             .menu-list{
                 position: absolute;
@@ -18,10 +22,32 @@ html{
                 display: flex;
                 justify-content: flex-end;
                 .menu-item{
-                    color: #777777;
+                    color: #777;
                     font-size: 19px;
                     padding: 40px;
                     letter-spacing: -0.5;
+                    font-weight: 400;
+                }
+                .menu-item:hover{
+                    color: #222;
+                    font-weight: 500;
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 1024px){
+    html{
+        body{
+            div{
+                .logo-image{
+
+                }
+                .menu-list{
+                    display: none;
+                    .menu-item{
+
+                    }
                 }
             }
         }
