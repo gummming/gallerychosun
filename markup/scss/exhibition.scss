@@ -107,7 +107,12 @@ html{
                     .viewing:hover{
                         color: #000000;
                     }
-                } 
+                }
+                .no-found{
+                    text-align: center;
+                    color: #777777;
+                    margin: 0 0 50px ;
+                }
                 .past-exhibition-list{
                     display: flex;
                     justify-content: space-between;
