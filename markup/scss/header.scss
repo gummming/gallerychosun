@@ -11,9 +11,18 @@ html{
             position: relative;
             background-color: white;
             .logo-image{
-                width: 320px;
+                width: 200px;
                 height: 100px;
                 padding: 0 0 0 40px;
+            }
+            .hamburger{
+                display: none;
+                .hamburger-box{
+                    .hamburger-inner{
+                        color: #777;
+
+                    }
+                }
             }
             .menu-list{
                 position: absolute;
@@ -33,6 +42,12 @@ html{
                     font-weight: 500;
                 }
             }
+            .menu-list-mobile{
+                display: none;
+                .menu-item-mobile{
+
+                }
+            }
         }
     }
 }
@@ -42,6 +57,20 @@ html{
             div{
                 .logo-image{
 
+                }
+                .hamburger{
+                    display: inline;
+                    position: absolute;
+                    right: 0;
+                    height: 100%;
+                    .hamburger-box{
+                        .hamburger-inner{
+    
+                        }
+                    }
+                    .hamburger-box:active{
+
+                    }
                 }
                 .menu-list{
                     display: none;
