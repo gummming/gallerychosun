@@ -25,19 +25,19 @@ html{
                     .current-exhibition-second-floor{ 
                         border-left: solid 1px #cecece; 
                         padding-left: 5%; 
-                        // h1, p{
-                        //     transition: all 1s ease-in-out 0;
-                        //     color: lightgray;
-                        // }
+                        h1, p{
+                            transition: all 1s ease-in-out 0;
+                            color: lightgray;
+                        }
                     }
-                    // .current-exhibition-second-floor:hover{
-                    //     h1{
-                    //         color: #000000;
-                    //     }
-                    //     p{
-                    //         color: #555555;
-                    //     }
-                    // }
+                    .current-exhibition-second-floor:hover{
+                        h1{
+                            color: #000000;
+                        }
+                        p{
+                            color: #555555;
+                        }
+                    }
                     .current-exhibition-title{
                         color: #000000;
                         padding-bottom: 10px;
@@ -98,31 +98,37 @@ html{
         body{
             div{
                 .current-exhibition{
-                    .current-exhibition-image{
-
-                    }
                     .current-exhibition-list{
+                        .current-exhibition-first-floor, .current-exhibition-second-floor{
+                            h1{
+                                span{
+                                    font-size: 18px;
+                                }
+                            }
+                            p{
+                                font-size: 14px;
+                            }
+                        }
                         .current-exhibition-first-floor{
                             .current-exhibition-title{
-                            }
-                            .current-exhibition-artist{
-
-                            }
-                            .current-exhibition-date{
-
+                                .kor{
+                                    font-weight: 400;
+                                }
+                                .eng{
+                                    display: none;
+                                }
                             }
                         }
                     }
                 }
                 .artist-list-preview{
-                    .artist-list-title{
-                    }
                     .artist-list{
                         li{
                             width: 49%;
-                            .artist-list-thumbnail{
-                            }
-                            .artist-name{
+                        }
+                        .artist-name{
+                            .eng{
+                                font-size: 10px;
                             }
                         }
                     }
@@ -131,30 +137,37 @@ html{
         }
     }
 }
-
-@media screen and (max-width: 320px){
+@media screen and (max-width: 590px){
     html{
         body{
             div{
                 .current-exhibition{
-                    .current-exhibition-image{
-
-                    }
                     .current-exhibition-list{
-                        .current-exhibition-first-floor{
-                            .current-exhibition-title{
+                        display: initial;
+                        .current-exhibition-first-floor, .current-exhibition-second-floor{
+                            width: 100%;
+                            h1{
+                                span{
+                                    font-size: 18px;
+                                }
                             }
-                            .current-exhibition-artist{
-
+                            p{
+                                font-size: 12px;
                             }
-                            .current-exhibition-date{
-
-                            }
+                        }
+                        .current-exhibition-second-floor{
+                            border-top: solid 1px #cecece;
+                            border-left: none;
+                            padding: 30px 0 0 0;
+                            margin: 30px 0 0 0;
                         }
                     }
                 }
                 .artist-list-preview{
                     .artist-list-title{
+                        span{
+                            font-size: 16px;
+                        }    
                     }
                     .artist-list{
                         li{
@@ -162,6 +175,53 @@ html{
                             .artist-list-thumbnail{
                             }
                             .artist-name{
+                                .kor{
+                                    font-size: 12px;
+                                }
+                                .eng{
+                                    font-size: 10px; 
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}                
+@media screen and (max-width: 320px){
+    html{
+        body{
+            div{
+                .current-exhibition{
+                    .current-exhibition-list{
+                        .current-exhibition-first-floor, .current-exhibition-second-floor{
+                            width: 100%;
+                            h1{
+                                span{
+                                    font-size: 16px;
+                                }
+                            }
+                            p{
+                                font-size: 10px;
+                            }
+                            span{
+                                font-size: 10px;
+                            }
+                        }
+                    }
+                }
+                .artist-list-preview{
+                    .artist-list{
+                        li{
+                            width: 100%;
+                            .artist-name{
+                                .kor{
+                                    font-size: 10px;
+                                }
+                                .eng{
+                                    font-size: 8px;
+                                }
                             }
                         }
                     }

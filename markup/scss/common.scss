@@ -369,10 +369,11 @@ textarea {
 
 @import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR:100,300,400,500,700,900&display=swap&subset=korean');
 
-html, body{
+html, body { 
     position: relative;
     width: 100%;
     height: 100%;
+    margin: 0 0 0 0;
 }
 
 body{
@@ -383,6 +384,11 @@ body{
         font-family: 'Noto Sans KR', sans-serif;
         font-weight: 300;
     } 
+}
+
+html, body{
+    width: 100%;
+    height: 100%;
 }
 
 h1{
