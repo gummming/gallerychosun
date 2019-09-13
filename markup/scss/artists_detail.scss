@@ -67,7 +67,7 @@ html{
                     }
                 }
             }
-            .artists-detail-text-kor{
+            .artists-detail-text-kor, .artists-detail-text-eng, .artists-detail-text-cv{
                 padding: 10% 10% 0 10%;
                 .artists-detail-text-title{
                     font-weight: 500;
@@ -104,73 +104,6 @@ html{
                     }    
                }
             }
-            .artists-detail-text-eng{
-                padding: 10% 10% 0 10%;   
-                .artists-detail-text-title{
-                    font-weight: 500;
-                    letter-spacing: 0.5px;
-                    border-top: 1.5px solid #cecece;
-                    padding-top: 80px;
-                    margin: 0px 0px 60px 0px;
-                    color: #777;
-                }
-                div{
-                    display: flex;
-                    flex-wrap: wrap;
-                    padding: 0;
-                    p{  
-                        width: 45%;
-                        text-align: justify;
-                        margin-bottom: 70px;
-                        line-height: 180%;
-                        color: #777;
-                        span{
-                            font-weight: 500;
-                        }
-                    }   
-                    p:last-child{
-                        margin-left: 10%;
-                    }          
-                }
-                a{
-                    color: #777;
-                    text-decoration: none;
-                    .pdf-download{
-                        color: #777;
-                        font-weight: 500;
-                        text-align: right;
-                    }        
-                }            
-            }
-            .artists-detail-text-cv{
-                padding: 10% 10% 0 10%; 
-                .artists-detail-text-title{
-                    font-weight: 500;
-                    letter-spacing: 0.5px;
-                    border-top: 1.5px solid #cecece;
-                    padding-top: 80px;
-                    margin: 0px 0px 60px 0px;
-                    color: #777;
-                }
-                div{
-                    display: flex;
-                    flex-wrap: wrap;
-                    padding: 0;
-                    p{  
-                        width: 45%;
-                        text-align: justify;
-                        margin-bottom: 70px;
-                        line-height: 180%;
-                        color: #777;
-                        span{
-                            font-weight: 500;
-                        }
-                    }   
-                    p:last-child{
-                        margin-left: 10%;
-                    }          
-                }
-            }
             .artists-detail-video{
                 padding: 10%;
                 .artists-detail-text-title{
@@ -186,7 +119,9 @@ html{
                     justify-content: space-between;
                     flex-wrap: wrap;	
                     .artists-detail-video-item{
+                        position: relative;
                         width: 24%;
+                        height: 256px;
                         margin-bottom: 136px;
                         font-weight: 500;
                         a{
@@ -197,12 +132,14 @@ html{
                             }
                             .video-title{
                                 line-height: 20px;
-                                margin-bottom: 25px;
+                                padding-bottom: 8px;
                             }
-                            .video-category{
-                                color: #777;
-                                font-size: 14px;
-                            }
+                        }
+                        .video-category{
+                            position: absolute;
+                            bottom: 0;
+                            color: #777;
+                            font-size: 14px;
                         }
                     }   
                 }
@@ -260,21 +197,12 @@ html{
                     .artists-detail-video-list{
                         .artists-detail-video-item{
                             width: 32%;
+                            margin-bottom: 80px;
                             a{
                                 .video-thumbnail{
-                                    width: 100%;
                                     margin-bottom: 16px;
                                 }
-                                .video-title{
-                                    height: 25px;
-                                    margin-bottom: 35px;
-                                    line-height: 20px;
-                                }
-                                .video-category{
-                                    color: #777777;
-                                    font-size: 14px;
-                                }
-                            }    
+                            }   
                         }   
                     }
                 }    
@@ -305,7 +233,7 @@ html{
                             width: 40%;
                         }
                     }
-                    .artists-detail-bigimg{
+                    .artists-detail-big-image{
                         width: 80%;
                     }
                     .artists-detail-image-titile{
@@ -354,18 +282,15 @@ html{
                     .artists-detail-video-list{
                         .artists-detail-video-item{
                             width: 48%;
+                            margin-bottom: 45px;
                             a{
-                                .video-thumbnail{
-                                    width: 100%;
-                                    margin-bottom: 16px;
-                                }
                                 .video-title{
                                     font-size: 14px;
                                 }
-                                .video-category{
-                                    color: #777777;
-                                    font-size: 12px;
-                                }
+                            }
+                            .video-category{
+                                color: #777;
+                                font-size: 12px;
                             }    
                         }   
                     }
@@ -401,16 +326,19 @@ html{
                     .artists-detail-video-list{
                         .artists-detail-video-item{
                             width: 100%;
+                            height: 230px;
+                            margin-bottom: 40px;
                             a{
                                 .video-thumbnail{
                                     width: 100%;
                                     margin-bottom: 16px;
                                 }
                                 .video-title{
-                                    height: 25px;
-                                    margin-bottom: 35px;
-                                    line-height: 20px;
+                                    font-size: 12px;
                                 }
+                            }
+                            .video-category{
+                                font-size: 10px;
                             }    
                         }   
                     }
