@@ -1,0 +1,349 @@
+html{
+    width: 100%;
+    height: 100%;
+    body{
+        box-sizing: border-box;
+        max-width: 1380px;
+        margin: auto;
+        padding: 0 50px 0 50px;
+        div{
+            .artists-detail-image-section{
+                padding: 0 10%;
+                position: relative;
+                .artists-detail-title{
+                    width: 100%;
+                    padding: 30px 0 10px 0;
+                    margin-bottom: 60px;
+                    border-bottom: 1.5px solid #cecece;
+                    float: left;
+                    .artists-detail-item{
+                        float: left;
+                        h2{
+                            font-weight: 500;
+                            letter-spacing: 1.5px;
+                            span{
+                                letter-spacing: 0;
+                                padding: 0 0 0 5px;
+                            }
+                        }
+                    }
+                    .artists-detail-item:last-child{
+                        float: right;
+                        color: #777777;
+                        font-weight: 500;
+                        text-align: right;
+                        .artists-detail-year{
+                            list-style: none;
+                            float: left;
+                            padding: 0 0 0 20px;
+                            a{
+                                text-decoration:none;
+                                color: #222222;
+                            }
+                        }
+                    }
+                }
+                .artists-detail-main-image{
+                    display: block;
+                    width: 60%;
+                    margin: auto;
+                }
+                .artists-detail-image-title{
+                    text-align: center;
+                    margin-top: 10px;
+                    font-size: 14px;
+                    font-weight: 500;
+                    color: #777777;
+                }
+                .artists-detail-thumb-list{
+                    position: absolute;
+                    right: 10%;
+                    top: 122px;
+                    .artists-detail-thumb-item{
+                        margin-bottom: 10px;
+                        img{
+                            height: 40px;
+                        }
+                    }
+                }
+            }
+            .artists-detail-text-kor, .artists-detail-text-eng, .artists-detail-text-cv{
+                padding: 10% 10% 0 10%;
+                .artists-detail-text-title{
+                    font-weight: 500;
+                    letter-spacing: 0.5px;
+                    border-top: 1.5px solid #cecece;
+                    padding: 80px 0 0 0;
+                    margin: 0px 0px 60px 0px;
+                    color: #777;
+                }
+                div{
+                    display: flex;
+                    flex-wrap: wrap;
+                    padding: 0;
+                    p{  
+                        width: 45%;
+                        text-align: justify;
+                        margin-bottom: 70px;
+                        line-height: 180%;
+                        span{
+                            font-weight: 400;
+                        }
+                    }
+                    p:last-child{
+                        margin-left: 10%;
+                    }        
+                }
+               a{
+                   text-decoration: none;
+                   color: #222;
+                    .pdf-download{
+                        color: #777;
+                        font-weight: 500;
+                        text-align: right;
+                    }    
+               }
+            }
+            .artists-detail-video{
+                padding: 10%;
+                .artists-detail-text-title{
+                    font-weight: 500;
+                    letter-spacing: 0.5px;
+                    border-top: 1.5px solid #cecece;
+                    padding-top: 80px;
+                    margin: 0px 0px 60px 0px;
+                    color: #777;
+                }
+                .artists-detail-video-list{
+                    display: flex;
+                    justify-content: space-between;
+                    flex-wrap: wrap;	
+                    .artists-detail-video-item{
+                        position: relative;
+                        width: 24%;
+                        height: 256px;
+                        margin-bottom: 136px;
+                        font-weight: 500;
+                        a{
+                            text-decoration: none;
+                            .video-thumbnail{
+                                width: 100%;
+                                margin-bottom: 16px;
+                            }
+                            .video-title{
+                                line-height: 20px;
+                                padding-bottom: 8px;
+                            }
+                        }
+                        .video-category{
+                            position: absolute;
+                            bottom: 0;
+                            color: #777;
+                            font-size: 14px;
+                        }
+                    }   
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 860px){
+    html{
+        body{
+            div{
+                .artists-detail-image-section{
+                    padding: 0 10%;
+                    position: relative;
+                    .artists-detail-main-image{
+                        width: 70%;
+                    }
+                    .artists-detail-image-titile{
+                        font-size: 12px;
+                    }
+                    .artists-detail-thumb-list{
+                        width:70%;
+                        position: initial;
+                        display: flex;
+                        margin: 30px auto;
+                        flex-wrap: nowrap;
+                        justify-content: center;
+                        .artists-detail-thumb-item{
+                            margin: 0 3% 0 0;
+                            img{
+                            }
+                        }
+                        .artists-detail-thumb-item:last-child{
+                            margin: 0 0 0 0;
+                        }
+                    }
+                }
+                .artists-detail-text-kor, .artists-detail-text-eng, .artists-detail-text-cv{
+                    div{
+                        p{  
+                            width: 100%;
+                            font-size: 14px;
+                        }
+                        p:last-child{
+                            margin-left: 0;
+                        }        
+                    }
+                }
+                .artists-detail-text-cv{
+                    div{
+                        font-size: 14px;
+                    }
+                }
+                .artists-detail-video{
+                    .artists-detail-video-list{
+                        .artists-detail-video-item{
+                            width: 32%;
+                            margin-bottom: 80px;
+                            a{
+                                .video-thumbnail{
+                                    margin-bottom: 16px;
+                                }
+                            }   
+                        }   
+                    }
+                }    
+            }
+        }
+    }
+}
+@media screen and (max-width: 590px){
+    html{
+        body{
+            div{
+                .artists-detail-image-section{
+                    padding: 0 0 80px 0;
+                    .artists-detail-title{
+                        ul{
+                            display: none;
+                        }
+                        .artists-detail-item{
+                            width: 60%;
+                            h2{
+                                font-size: 14px;
+                            }
+                            span{
+                                font-size: 12px;
+                            }
+                        }
+                        .artists-detail-title-item:last-child{
+                            width: 40%;
+                        }
+                    }
+                    .artists-detail-big-image{
+                        width: 80%;
+                    }
+                    .artists-detail-image-titile{
+                        font-size: 10px;
+                        .eng{
+                            display: none;
+                        }
+                    }
+                    .artists-detail-thumb-list{
+                        width:80%;
+                        display: flex;
+                        margin: 30px auto 0 auto;
+                        flex-wrap: nowrap;
+                        justify-content: center;
+                        .exhibition-detail-thumb-item{
+                            margin: 0 3% 0 0;
+                            height: 30px;
+                            img{
+                                height: 100%;
+                            }
+                        }
+                        .artists-detail-thumb-item:last-child{
+                            margin: 0 0 0 0;
+                        }
+                    }
+                }
+                .artists-detail-text-kor, .artists-detail-text-eng, .artists-detail-text-cv{
+                    padding: 0;
+                    h2{
+                        font-size: 16px;
+                    }
+                    div{
+                        p{  
+                            font-size: 12px;
+                        }
+                    }
+                    a{
+                        .pdf-download{
+                           font-size: 14px;
+                           padding: 0 0 50px;
+                        }        
+                    }        
+                }
+                .artists-detail-video{
+                    padding: 0;
+                    .artists-detail-video-list{
+                        .artists-detail-video-item{
+                            width: 48%;
+                            margin-bottom: 45px;
+                            a{
+                                .video-title{
+                                    font-size: 14px;
+                                }
+                            }
+                            .video-category{
+                                color: #777;
+                                font-size: 12px;
+                            }    
+                        }   
+                    }
+                }    
+            }
+        }
+    }
+}
+@media screen and (max-width: 320px){
+    html{
+        body{
+            div{
+                .artists-detail-image-section{
+                    padding: 0 0 40px 0;
+                    .artists-detail-title{
+                        .artists-detail-item{
+                            h2{
+                                font-size: 12px;
+                                span{
+                                    display: none;
+                                }
+                            }
+                            span{
+                                font-size: 10px;
+                            }
+                        }
+                    }
+                    .artists-detail-thumb-list{
+                       display: none;
+                    }
+                }
+                .artists-detail-video{
+                    .artists-detail-video-list{
+                        .artists-detail-video-item{
+                            width: 100%;
+                            height: 230px;
+                            margin-bottom: 40px;
+                            a{
+                                .video-thumbnail{
+                                    width: 100%;
+                                    margin-bottom: 16px;
+                                }
+                                .video-title{
+                                    font-size: 12px;
+                                }
+                            }
+                            .video-category{
+                                font-size: 10px;
+                            }    
+                        }   
+                    }
+                }    
+            }
+        }
+    }
+}

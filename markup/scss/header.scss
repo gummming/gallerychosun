@@ -42,12 +42,12 @@ html{
                     font-weight: 500;
                 }
             }
-            .menu-list-mobile{
-                display: none;
-                .menu-item-mobile{
+            // .menu-list-mobile{
+            //     display: none;
+            //     .menu-item-mobile{
 
-                }
-            }
+            //     }
+            // }
         }
     }
 }
@@ -57,6 +57,69 @@ html{
             div{
                 .logo-image{
 
+                }
+                .hamburger{
+                    display: inline;
+                    position: absolute;
+                    right: 0;
+                    height: 100%;
+                    .hamburger-box{
+                        .hamburger-inner{
+    
+                        }
+                    }
+                    .hamburger-box:active{
+
+                    }
+                }
+                .menu-list{
+                    .menu-item{
+                        font-size: 17px;
+
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 860px){
+    html{
+        body{
+            div{
+                .logo-image{
+                    width: 160px;
+
+                }
+                .hamburger{
+                    display: inline;
+                    position: absolute;
+                    right: 0;
+                    height: 100%;
+                    .hamburger-box{
+                        .hamburger-inner{
+    
+                        }
+                    }
+                    .hamburger-box:active{
+
+                    }
+                }
+                .menu-list{
+                    flex-direction: column;
+                    .menu-item{
+
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 320px){
+    html{
+        body{
+            div{
+                .logo-image{
+                    width: 120px;
                 }
                 .hamburger{
                     display: inline;

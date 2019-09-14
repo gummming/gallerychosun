@@ -1,0 +1,87 @@
+html{
+    width: 100%;
+    height: 100%;
+    body{
+        box-sizing: border-box;
+        max-width: 1380px;
+        padding: 0px 50px;
+        margin:auto;
+        div{
+            .search-bar{
+                float: left;
+                width: 100%;
+                padding: 0 0 60px 0;
+            }
+            ::placeholder{
+                color: lightgray;
+                font-family: 'Rajdhani', sans-serif;
+            }    
+            h2{
+                width: 100%;
+                border-bottom: solid 0.75px #cecece;
+                margin: 80px 0px 60px 0px;
+                padding-bottom: 20px;
+                span{
+                    color: #777;
+                    font-weight: 400;
+                }
+            }
+            .not-found-text{
+                text-align: center;
+                font-size: 18px;
+                color: lightgrey;
+            }
+            .artists-list{
+                display: flex;
+                justify-content: space-between;
+                flex-wrap: wrap;
+                .artists-item{
+                    width: 32%;
+                    margin-bottom: 100px;
+                    .artists-thumbnail{
+                        width: 100%;
+                        margin-bottom: 16px;
+                        background-color: #777;
+                    }
+                    .artists-name{
+                        color: #777;
+                        font-size: 14px;
+                        margin-bottom: 6px;
+                        .kor{
+                            padding-right: 5px;
+                        }
+                        .eng{
+                            font-size: 12px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width:860px){
+    html{
+        body{
+            div{
+                .artists-list{
+                    .artists-item{
+                        width: 48%;
+                    }
+                }
+            }
+        }
+    }    
+}
+@media screen and (max-width: 320px){
+    html{    
+        body{
+            div{
+                .artists-list{
+                    .artists-item{
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }       
+}
