@@ -1,0 +1,71 @@
+html{
+    body{
+        div{
+            max-width: 1380px;
+            padding: 0px 50px;
+            margin:auto;
+            .media-archive-video-section{
+                padding: 0;                
+                .media-archive-video-wrapper{
+                    margin: 30px 0;
+                    padding: 0px;
+                    height: 600px;
+                    position: relative;
+                    .media-archive-video{
+                        width: 100%;
+                        height: 100%;
+                        background-color: darkgray;
+                    }
+                   .media-archive-video-text{
+                        padding: 0;
+                        position: absolute;
+                        top: 60%;
+                        left: 10%;
+                        color: white;
+                        line-height: 1.2;
+                        h1{
+                            margin: 0 0 4px;
+                            letter-spacing: 0.5px;
+                            font-size: 25px;
+                        }
+                        p{
+                            letter-spacing: 0.1px;
+                            font-size: 18px;
+                        }
+                    }
+                }
+            }
+            .media-archive-preview{
+                padding: 20px 10%;
+                .search-bar{
+                    border: 0.75px solid #cecece; 
+                    width: 220px;
+                    height: 20px;
+                    padding: 0;
+                    margin: 0 100% 80px 0;
+                }       
+                .media-archive-preview-list-wrapper{
+                    padding: 0;
+                    h2{
+                        margin: 0 0 15px 0;
+                        font-weight: 550;
+                    }
+                    .media-archive-preview-list{
+                        display: flex;
+                        justify-content: flex-start;	
+                        .media-archive-preview-item{
+                            width: 220px; 
+                            margin: 0 10px 80px 0px;
+                            .media-archive-preview-thumbnail{
+                                width: 100%;
+                                margin-bottom: 16px;
+                            }
+                            .media-archive-preview-name{
+                            }
+                        }
+                    }
+                }        
+            }
+        }
+    }
+}
