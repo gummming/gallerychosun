@@ -8,76 +8,58 @@ html{
         padding: 0px 50px;
         margin:auto;
         div{
-            position: relative;
             background-color: white;
             .logo-image{
                 width: 200px;
-                height: 100px;
-                padding: 0 0 0 40px;
+                padding: 40px 0px 40px 40px;
             }
-            .hamburger{
+            .menu-icon{
                 display: none;
-                .hamburger-box{
-                    .hamburger-inner{
+                .bar1, .bar2, .bar3{
+                    width: 30px;
+                    height: 3px;
+                    background-color: #222;
+                    margin: 6px 0;
+                } 
+            }
+            .menu-list-wrapper{
+                float: right;
+                .menu-list{
+                    display: flex;
+                    justify-content: flex-end;
+                    .menu-item{
                         color: #777;
-
+                        font-size: 19px;
+                        padding: 40px;
+                        letter-spacing: -0.5;
+                        font-weight: 400;
+                    }
+                    .menu-item:hover{
+                        color: #222;
+                        font-weight: 500;
                     }
                 }
-            }
-            .menu-list{
-                position: absolute;
-                top: 0;
-                right: 0;
-                display: flex;
-                justify-content: flex-end;
-                .menu-item{
-                    color: #777;
-                    font-size: 19px;
-                    padding: 40px;
-                    letter-spacing: -0.5;
-                    font-weight: 400;
-                }
-                .menu-item:hover{
-                    color: #222;
-                    font-weight: 500;
-                }
-            }
-            // .menu-list-mobile{
-            //     display: none;
-            //     .menu-item-mobile{
-
-            //     }
-            // }
+            }    
         }
     }
 }
 @media screen and (max-width: 1024px){
     html{
         body{
+            padding: 0 30px;
             div{
                 .logo-image{
-
+                    padding: 30px 0px 30px 30px;
                 }
-                .hamburger{
-                    display: inline;
-                    position: absolute;
-                    right: 0;
-                    height: 100%;
-                    .hamburger-box{
-                        .hamburger-inner{
-    
+                .menu-list-wrapper{
+                    .menu-list{
+                        .menu-item{
+                            font-size: 17px;
+                            padding: 30px;
+
                         }
                     }
-                    .hamburger-box:active{
-
-                    }
-                }
-                .menu-list{
-                    .menu-item{
-                        font-size: 17px;
-
-                    }
-                }
+                }    
             }
         }
     }
@@ -87,29 +69,30 @@ html{
         body{
             div{
                 .logo-image{
-                    width: 160px;
+                    padding: 30px 0 30px 10px;
 
                 }
-                .hamburger{
+                .menu-icon{
                     display: inline;
                     position: absolute;
                     right: 0;
-                    height: 100%;
-                    .hamburger-box{
-                        .hamburger-inner{
-    
+                    padding: 20px 30px 30px 30px;
+                    .bar1, .bar2, .bar3{
+
+                    }
+                }
+                .menu-list-wrapper{
+                    display: none;
+                    padding-top: 100px;
+                    .menu-list{
+                        flex-direction: column;
+                        .menu-item{
+                            padding: 30px;
+                            font-size: 15px;
+
                         }
                     }
-                    .hamburger-box:active{
-
-                    }
-                }
-                .menu-list{
-                    flex-direction: column;
-                    .menu-item{
-
-                    }
-                }
+                }    
             }
         }
     }
@@ -119,28 +102,28 @@ html{
         body{
             div{
                 .logo-image{
-                    width: 120px;
+                    width: 130px;
+                    padding: 25px 0px;
                 }
-                .hamburger{
-                    display: inline;
-                    position: absolute;
-                    right: 0;
-                    height: 100%;
-                    .hamburger-box{
-                        .hamburger-inner{
-    
+                .menu-icon{
+                    padding: 20px;
+                    .bar1, .bar2, .bar3{
+                        width: 25px;
+                        height: 3px;
+                        background-color: #222;
+                        margin: 4px 0;
+
+                    }
+                }
+                .menu-list-wrapper{
+                    .menu-list{
+                        display: none;
+                        .menu-item{
+                            font-size: 12px;
+
                         }
                     }
-                    .hamburger-box:active{
-
-                    }
-                }
-                .menu-list{
-                    display: none;
-                    .menu-item{
-
-                    }
-                }
+                }    
             }
         }
     }
