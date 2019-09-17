@@ -1,9 +1,11 @@
 html{
     min-height: 100%;
     margin: 0;
-    max-width: 1280px;
+    max-width: 1380px;
+    padding: 0 50px;
     body{
         padding: 0 10%;
+        width: 80%;
         min-height: 100%;
         footer{
             position: absolute;
@@ -13,8 +15,9 @@ html{
             height: 45px;
             text-align: center;
             ul{
+                width: 100%;
                 margin: 0;
-                padding: 0;
+                padding: 0 0 10px 0;
                 text-align: center;
                 font-size: 14px;
                 color: #777777;
@@ -45,9 +48,10 @@ html{
                 ul{
                     li{
                         font-size: 10px;
-                        padding: 0 5px;
+                        padding: 5 5px;
                     }
                     .social{
+                        padding: 5 5px;
                         img{
                             width: 10px;
                             height: 10px;
