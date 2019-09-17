@@ -10,7 +10,7 @@ html{
             .search-bar{
                 float: left;
                 width: 100%;
-                padding: 0 0 60px 0;
+                padding-bottom: 60px;
             }
             ::placeholder{
                 color: lightgray;
@@ -63,22 +63,87 @@ html{
     html{
         body{
             div{
+                .search-bar{
+                    padding-bottom: 50px;
+                }
+                ::placeholder{
+                    font-size: 16px;
+                }
+                h2{
+                    margin: 70px 0px 50px 0px;
+                }
+                h2, .not-found-text{
+                    font-size: 16px;
+                }
                 .artists-list{
                     .artists-item{
                         width: 48%;
+                        margin-bottom: 80px;
                     }
                 }
             }
         }
     }    
 }
+@media screen and (max-width: 590px){
+    html{    
+        body{
+            div{
+                .search-bar{
+                    padding-bottom: 40px;
+                }
+                ::placeholder{
+                    font-size: 14px;
+                }
+                h2{
+                    margin: 60px 0px 40px 0px;
+                }
+                h2, .not-found-text{
+                    font-size: 14px;
+                }
+                .artists-list{
+                    .artists-item{
+                        .artists-name{
+                            font-size: 12px;
+                            .kor{
+                                padding-right: 5px;
+                            }
+                            .eng{
+                                font-size: 10px;
+                            }
+                        }
+                    }    
+                }
+            }
+        }
+    }       
+}
 @media screen and (max-width: 320px){
     html{    
         body{
             div{
+                .search-bar{
+                    padding-bottom: 30px;
+                    input{
+                        width: 135px;
+                    }
+                }
+                h2{
+                    margin: 50px 0px 30px 0px;
+                }
                 .artists-list{
                     .artists-item{
                         width: 100%;
+                        margin-bottom: 60px;
+                    }
+                    .artists-name{
+                        font-size: 10px;
+                        .kor{
+                            padding-right: 5px;
+                        }
+                        .eng{
+                            font-size: 8px;
+                        }
                     }
                 }
             }

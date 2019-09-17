@@ -108,7 +108,7 @@ html{
         }
     }
 }
-@media screen and (max-width: 320px){
+@media screen and (max-width: 460px){
     html{
         body{
             div{
@@ -124,13 +124,36 @@ html{
                         .gallery-information-item{
                             width: 100%;
                             padding-bottom: 30px;
-                            font-size: 10px;
+                            font-size: 12px;
                             .sns{
                                 .sns-image{
                                     width: 15px;
                                     padding-right: 8px;
                                 }
                             }
+                        }
+
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 320px){
+    html{
+        body{
+            div{
+                h2{
+                    padding: 40px 0px 20px 0px;
+                    font-size: 12px;
+                }
+                .gallery-article{
+                    font-size: 10px;
+                }
+                .gallery-information{
+                    .gallery-information-list{
+                        .gallery-information-item{
+                            font-size: 10px;
                         }
 
                     }

@@ -131,8 +131,16 @@ html{
                                 margin-bottom: 16px;
                             }
                             .video-title{
-                                line-height: 20px;
+                                display: -webkit-box; 
+                                width: 100%;
+                                height: 3.6em;
                                 padding-bottom: 8px;
+                                overflow: hidden;
+                                text-overflow: ellipsis;
+                                -webkit-line-clamp: 3;
+                                -webkit-box-orient: vertical;
+                                word-wrap:break-word; 
+                                line-height: 1.2em;
                             }
                         }
                         .video-category{
@@ -260,7 +268,7 @@ html{
                         }
                     }
                 }
-                .artists-detail-text-kor, .artists-detail-text-eng, .artists-detail-text-cv{
+                .artists-detail-text-kor, .artists-detail-text-eng, .artists-detail-text-cv, .artists-detail-video{
                     padding: 0;
                     h2{
                         font-size: 16px;
@@ -282,6 +290,7 @@ html{
                     .artists-detail-video-list{
                         .artists-detail-video-item{
                             width: 48%;
+                            height: 230px;
                             margin-bottom: 45px;
                             a{
                                 .video-title{
@@ -326,7 +335,6 @@ html{
                     .artists-detail-video-list{
                         .artists-detail-video-item{
                             width: 100%;
-                            height: 230px;
                             margin-bottom: 40px;
                             a{
                                 .video-thumbnail{
