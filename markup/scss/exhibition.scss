@@ -7,6 +7,7 @@ html{
             padding: 0px 50px;
             margin:auto;
             .current-exhibition{
+                width: 80%;
                 padding: 0 10%;
                 .current-exhibition-image{
                     width: 100%;
@@ -15,6 +16,7 @@ html{
                 }
                 .current-exhibition-list{
                     display: flex;
+                    width: 100%;
                     .current-exhibition-first-floor, .current-exhibition-second-floor{
                         width: 50%;
                         margin: 50px 0 0 0;
@@ -69,6 +71,7 @@ html{
             }
             .past-exhibition-preview{
                 padding: 10%;
+                width: 80%;
                 .search-bar{ 
                     input{
                         width: 220px;
@@ -114,12 +117,13 @@ html{
                     margin: 0 0 50px ;
                 }
                 .past-exhibition-list{
+                    width: 100%;
                     display: flex;
                     justify-content: space-between;
                     flex-wrap: wrap;	
                     .past-exhibition-item{
-                        width: 23%;
-                        margin-bottom: 130px;
+                        width: 22%;
+                        margin: 0 0 130px 0;
                         font-weight: 500;
                         .past-exhibition-thumbnail{
                             width: 100%;
@@ -268,7 +272,7 @@ html{
                     .past-exhibition-list{
                         .past-exhibition-item{
                             width: 45%;
-                            margin-bottom: 80px;
+                            margin-bottom: 60px;
                             .exhibition-name{
                                 margin-bottom: 20px;
                                 font-size: 14px;
@@ -286,14 +290,13 @@ html{
         }
     }
 }
-@media screen and (max-width: 320px){
+@media screen and (max-width: 350px){
     html{
         body{
             div{
                 .current-exhibition{
                     .current-exhibition-list{
                         .current-exhibition-first-floor, .current-exhibition-second-floor{
-                            width: 100%;
                             h1{
                                 span{
                                     font-size: 16px;
