@@ -8,6 +8,7 @@ html{
             margin: auto;
             .exhibition-detail-image-section{
                 padding: 0 10%;
+                width: 80%;
                 position: relative;
                 .exhibition-detail-title-list{
                     width: 100%;
@@ -40,7 +41,7 @@ html{
                 .exhibition-detail-big-image{
                     display: block;
                     width: 60%;
-                    margin: auto;
+                    margin: 0 20%;
                 }
                 .exhibition-detail-image-title{
                     text-align: center;
@@ -63,6 +64,7 @@ html{
             }
             .exhibition-detail-text-kor{
                 padding: 10% 10% 0 10%;
+                width: 80%;
                 .exhibition-detail-text-title{
                     font-weight: 500;
                     letter-spacing: 0.5px;
@@ -84,7 +86,7 @@ html{
                     p{  
                         width: 45%;
                         text-align: justify;
-                        margin-bottom: 70px;
+                        margin: 0 10% 70px 0;
                         line-height: 180%;
                         span{
                             font-weight: 400;
@@ -92,6 +94,7 @@ html{
                     }
                     p:last-child{
                         margin-left: 10%;
+                        margin: 0 0 70px 0;
                     }        
                 }
                a{
@@ -106,6 +109,7 @@ html{
             }
             .exhibition-detail-text-eng{
                 padding: 10%;   
+                width: 80%;
                 .exhibition-detail-text-title{
                     font-weight: 500;
                     letter-spacing: 0.5px;
@@ -128,7 +132,7 @@ html{
                     p{  
                         width: 45%;
                         text-align: justify;
-                        margin-bottom: 70px;
+                        margin: 0 10% 70px 0;
                         line-height: 180%;
                         color: #777777;
                         span{
@@ -137,6 +141,7 @@ html{
                     }   
                     p:last-child{
                         margin-left: 10%;
+                        margin: 0 0 70px 0;
                     }          
                 }
                 a{
@@ -157,10 +162,9 @@ html{
         body{
             div{
                 .exhibition-detail-image-section{
-                    padding: 0 10%;
-                    position: relative;
                     .exhibition-detail-big-image{
                         width: 70%;
+                        margin: 0 15%;
                     }
                     .exhibition-detail-image-title{
                         font-size: 12px;
@@ -169,13 +173,11 @@ html{
                         width:70%;
                         position: initial;
                         display: flex;
-                        margin: 30px auto;
+                        margin: 30px 15%;
                         flex-wrap: nowrap;
                         justify-content: center;
                         .exhibition-detail-thumb-item{
-                            margin: 0 3% 0 0;
-                            img{
-                            }
+                            margin: 0 2% 0 0;
                         }
                         .exhibition-detail-thumb-item:last-child{
                             margin: 0 0 0 0;
@@ -187,10 +189,8 @@ html{
                         p{  
                             width: 100%;
                             font-size: 14px;
-                        }
-                        p:last-child{
-                            margin-left: 0;
-                        }        
+                            margin: 0 0 70px 0;
+                        }      
                     }
                 }
                 .exhibition-detail-text-eng{
@@ -198,10 +198,8 @@ html{
                         p{  
                             width: 100%;
                             font-size: 14px;
-                        }   
-                        p:last-child{
-                            margin-left: 0;
-                        }          
+                            margin: 0 0 70px 0;
+                        }           
                     }    
                 }
             }
@@ -214,6 +212,7 @@ html{
             div{
                 .exhibition-detail-image-section{
                     padding: 0 0 80px 0;
+                    width: 100%;
                     .exhibition-detail-title-list{
                         .exhibition-detail-title-item{
                             width: 60%;
@@ -233,6 +232,7 @@ html{
                     }
                     .exhibition-detail-big-image{
                         width: 80%;
+                        margin: 0 10%;
                     }
                     .exhibition-detail-image-title{
                         font-size: 10px;
@@ -243,11 +243,11 @@ html{
                     .exhibition-detail-thumb-list{
                         width:80%;
                         display: flex;
-                        margin: 30px auto 0 auto;
+                        margin: 30px 10% 0 10%;
                         flex-wrap: nowrap;
                         justify-content: center;
                         .exhibition-detail-thumb-item{
-                            margin: 0 3% 0 0;
+                            margin: 0 2% 0 0;
                             height: 30px;
                             img{
                                 height: 100%;
@@ -259,16 +259,17 @@ html{
                     }
                 }
                 .exhibition-detail-text-kor{
+                    width: 100%;
                     padding: 0;
                     h2{
                         font-size: 16px;
                     }
                     h3{
-                        font-size: 14px;
+                        font-size: 12px;
                     }
                     div{
                         p{  
-                            font-size: 12px;
+                            font-size: 10px;
                         }
                     }
                     a{
@@ -279,16 +280,17 @@ html{
                     }        
                 }
                 .exhibition-detail-text-eng{
+                    width: 100%;
                     padding: 0;
                     h2{
                         font-size: 16px;
                     }
                     h3{
-                        font-size: 14px;
+                        font-size: 12px;
                     }
                     div{
                         p{  
-                            font-size: 12px;
+                            font-size: 10px;
                         }
                     }
                      a{
@@ -311,7 +313,7 @@ html{
                     .exhibition-detail-title-list{
                         .exhibition-detail-title-item{
                             h2{
-                                font-size: 12px;
+                                font-size: 14px;
                                 span{
                                     display: none;
                                 }
@@ -324,6 +326,16 @@ html{
                     .exhibition-detail-thumb-list{
                        display: none;
                     }
+                }
+                .exhibition-detail-text-kor{
+                    h2{
+                        font-size: 14px;
+                    }       
+                }
+                .exhibition-detail-text-eng{
+                    h2{
+                        font-size: 14px;
+                    } 
                 }
             }
         }
